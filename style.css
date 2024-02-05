@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #171717;
+    background-image: linear-gradient(to right , #121212, #434343);
 }
 /* Top Nav Container */
 .topNav { 
@@ -80,7 +80,7 @@ body {
     transition: .5s;
 }
 /* Main Image */
-img {
+.img-home {
     position: absolute;
     background-color: aliceblue;
     border-radius: 50%;
@@ -102,7 +102,6 @@ img {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    flex-direction:unset;
     top: 50%;
     left: 50%;
     transform:translate(-50%, -50%);
@@ -118,17 +117,61 @@ img {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     min-width: 20%;
     border-radius: 14px;
-    box-shadow: 0px 0px 20px #fefefe;
+    background-image: linear-gradient(to bottom right, #464646, #86156afb);
+    box-shadow: 0px 0px 20px #4c4c4c95;
     margin: 16px;
+    padding: 8px;
 }
-.txtMain-About h1, p {
+.txtMain-About, .txtMain-Contact h1, p {
     text-align: center;
     color: #fefefe;
     padding: 2px;
 
 }
-.txtMain-About h1 {
+.txtMain-About, .txtMain-Contact h1 {
     color: #ff8fe3;
+}
+
+/* For Contact */
+.container-Contact{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    animation: contactAnimation 1.25s forwards;
+}
+
+/* animation for Contact contents */
+@keyframes contactAnimation {
+    from {top: 0%;}
+    to {left: 71%;}
+}
+
+.txtMain-Contact {
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 14px;
+    background-image: linear-gradient(to bottom right, #464646, #86156afb);
+    box-shadow: 0px 0px 20px #4c4c4c95;
+    
+}
+
+.container-link {
+    position: relative;
+    display: flex;
+    margin: 20px;
+}
+.img-link {
+    width: 50px;
+    position: relative;
+    margin: 0px 22px;
+   
 }
 
 /* Responsive @1261px - 1920px */
