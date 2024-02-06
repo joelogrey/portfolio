@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body {
-    background-image: linear-gradient(to right , #121212, #434343);
+    background-image: linear-gradient(to right , #202020, #390b2a);
 }
 /* Top Nav Container */
 .topNav { 
@@ -117,7 +117,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     min-width: 20%;
     border-radius: 14px;
-    background-image: linear-gradient(to bottom right, #464646, #86156afb);
+    background-image: linear-gradient(to bottom right, #333131, #4b0e3cfb);
     box-shadow: 0px 0px 20px #4c4c4c95;
     margin: 16px;
     padding: 8px;
@@ -134,44 +134,35 @@ body {
 
 /* For Contact */
 .container-Contact{
-    position: absolute;
     width: 100%;
+    position: absolute;
     top: 50%;
-    left: 50%;
-    transform:translate(-50%, -50%);
+    transform: translate(0, -50%);
+    background-image: linear-gradient(to bottom right, #464646, #86156afb);
     animation: contactAnimation 1.25s forwards;
 }
 
 /* animation for Contact contents */
 @keyframes contactAnimation {
     from {top: 0%;}
-    to {left: 71%;}
+    to {top: 50%;}
 }
 
 .txtMain-Contact {
-    position: relative;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 14px;
-    background-image: linear-gradient(to bottom right, #464646, #86156afb);
-    box-shadow: 0px 0px 20px #4c4c4c95;
-    
 }
 
 .container-link {
     position: relative;
     display: flex;
-    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 36px;
 }
+
 .img-link {
-    width: 50px;
-    position: relative;
-    margin: 0px 22px;
-   
+    width: 40px;
+    margin: 0px 18px;
 }
 
 /* Responsive @1261px - 1920px */
